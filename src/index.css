@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* 🌈 THEME COLORS */
+@theme {
+  --color-primary: #2563eb;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+  --color-neutral: #111827;
+  --color-base-100: #f5f6f7;
+  --color-info: #38bdf8;
+  --color-success: #22c55e;
+  --color-warning: #fbbf24;
+  --color-error: #ef4444;
+}
+
+/* ✅ BUTTON STYLES */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-6 sm:px-8 py-2 sm:py-3 font-medium transition shadow-sm border border-transparent text-sm sm:text-base;
+}
+.btn:hover {
+  @apply opacity-90;
+}
+.btn-primary {
+  @apply bg-[var(--color-primary)] text-white;
+}
+.btn-secondary {
+  @apply bg-[var(--color-secondary)] text-white;
+}
+.btn-success {
+  @apply bg-[var(--color-success)] text-white;
+}
+.btn-error {
+  @apply bg-[var(--color-error)] text-white;
+}
+.btn-link {
+  @apply text-[var(--color-primary)] underline underline-offset-4 bg-transparent px-0 py-0 shadow-none border-0;
+}
+.btn-sm {
+  @apply px-3 py-1 text-xs sm:text-sm;
+}
+
+/* ✅ NAVIGATION */
+.navbar {
+  @apply sticky top-0 z-50 w-full bg-white/90 backdrop-blur border-b border-gray-200 px-4 sm:px-6 md:px-8;
+}
+.menu {
+  @apply flex items-center gap-3 sm:gap-4;
+}
+.menu-horizontal {
+  @apply flex-row;
+}
+.active {
+  @apply font-semibold text-[var(--color-primary)];
+}
+
+/* ✅ CARD COMPONENT */
+.card {
+  @apply bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition;
+}
+.card-body {
+  @apply p-4 sm:p-5;
+}
+
+/* ✅ COLOR THEMES */
+.bg-base-100 {
+  @apply bg-[var(--color-base-100)];
+}
+.bg-base-200 {
+  @apply bg-white;
+}
+.bg-base-300 {
+  @apply bg-gray-100;
+}
+.text-base-content {
+  @apply text-[#1f2937];
+}
+.bg-neutral {
+  @apply bg-[#111827];
+}
+.text-neutral-content {
+  @apply text-white;
+}
+
+/* ✅ TYPOGRAPHY & LAYOUT */
+html,
+body,
+#root {
+  height: 100%;
+  @apply text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed;
+}
+
+/* ✅ IMAGE & CONTAINERS */
+img {
+  @apply max-w-full h-auto;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 md:px-8;
+}
