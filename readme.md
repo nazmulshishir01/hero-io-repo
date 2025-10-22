@@ -13,7 +13,7 @@ A responsive React + Vite demo that showcases a catalog of apps with search, det
 - Loading indicators for navigation & search
 - Custom 404 page and “App not found” empty state
 
-## Tech
+## Technologies
 
 - React 18, React Router 6
 - Vite
